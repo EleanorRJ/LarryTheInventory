@@ -36,8 +36,9 @@ public class Inventory {
 		return "Product not found";
 	}
 	
-	public void addProduct() {
-		
+	//add a new product to the inventory
+	public void addProduct(String name, float price, int stock, String location) {
+		this.inventory.add(new Product(name, price, stock, location));
 	}
 
 }
